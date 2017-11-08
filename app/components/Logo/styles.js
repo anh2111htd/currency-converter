@@ -21,6 +21,6 @@ export default EStyleSheet.create({
     fontSize: 28,
     letterSpacing: -0.5,
     marginTop: 15,
-    fontWeight: '600',
+    fontWeight: '200',
   },
 });
