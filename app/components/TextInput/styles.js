@@ -31,7 +31,7 @@ export default EStyleSheet.create({
     fontWeight: '600',
     fontSize: 20,
     paddingHorizontal: 16,
-    color: '$primaryGreen',
+    color: '$primaryBlue',
   },
   separator: {
     height: INPUT_HEIGHT,
