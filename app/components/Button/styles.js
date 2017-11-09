@@ -7,6 +7,7 @@ export default EStyleSheet.create({
   wrapper: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   icon: {
     width: 19,
@@ -14,7 +15,7 @@ export default EStyleSheet.create({
   },
   text: {
     color: '$white',
-    fontSize: 14,
+    fontSize: 15,
     paddingVertical: 20,
     fontWeight: '300',
   },

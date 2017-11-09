@@ -1,7 +1,7 @@
 import { Dimensions } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-const imageWidth = Dimensions.get('window').width / 2;
+const imageWidth = Dimensions.get('window').width / 5;
 
 export default EStyleSheet.create({
   container: {
@@ -18,9 +18,10 @@ export default EStyleSheet.create({
   },
   text: {
     color: '$white',
-    fontSize: 28,
+    fontSize: 100,
     letterSpacing: -0.5,
-    marginTop: 15,
-    fontWeight: '200',
+    marginTop: 0,
+    fontWeight: '100',
   },
 });
+  
