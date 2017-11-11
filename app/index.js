@@ -1,7 +1,8 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-import Home from './screens/Home';
+import Navigator from './config/routes'
+import AlertProvider from './components/Alert'
 
 EStyleSheet.build({
   $primaryGreen: '#2ecc71',
@@ -12,4 +13,4 @@ EStyleSheet.build({
   $inputText: '#797979',
 });
 
-export default () => <Home />;
+export default () => <AlertProvider><Navigator/></AlertProvider>
