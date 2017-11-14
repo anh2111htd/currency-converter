@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { ScrollView, StatusBar } from 'react-native';
+import { View, StatusBar } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
 import { ListItem, Separator } from '../components/List';
@@ -24,7 +24,7 @@ class Themes extends Component {
 
   render() {
     return (
-      <ScrollView>
+      <View>
         <StatusBar translucent={false} barStyle="default" />
         <ListItem
           text="Blue"
@@ -58,7 +58,7 @@ class Themes extends Component {
           iconBackground={styles.$purple}
         />
         <Separator />
-      </ScrollView>
+      </View>
     );
   }
 }

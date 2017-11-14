@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { ScrollView, StatusBar, Platform, Linking } from 'react-native';
+import { View, StatusBar, Platform, Linking } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { ListItem, Separator } from '../components/List';
 import { connectAlert } from '../components/Alert'
@@ -27,7 +27,7 @@ class Options extends Component {
 
   render() {
     return (
-      <ScrollView>
+      <View>
         <StatusBar translucent={false} barStyle="default" />
         <ListItem
           text="Themes"
@@ -43,7 +43,7 @@ class Options extends Component {
           customIcon={<Ionicons name={`${ICON_PREFIX}-link`} size={ICON_SIZE} color={ICON_COLOR} />}
         />
         <Separator />
-      </ScrollView>
+      </View>
     );
   }
 }
