@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { FlatList, StatusBar, View } from 'react-native';
+import { FlatList, StatusBar, View, Text } from 'react-native';
 import { connect } from 'react-redux';
 
 import { ListItem, Separator } from '../components/List';

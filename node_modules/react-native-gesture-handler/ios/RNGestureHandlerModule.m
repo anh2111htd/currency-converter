@@ -10,8 +10,6 @@
 #import "RNGestureHandler.h"
 #import "RNGestureHandlerManager.h"
 
-#import "RNGestureHandlerButton.h"
-
 @interface RNGestureHandlerModule () <RCTUIManagerObserver>
 
 @end
