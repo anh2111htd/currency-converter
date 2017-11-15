@@ -1,8 +1,10 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { Provider } from 'react-redux';
 
-import Navigator from './config/routes'
-import { AlertProvider } from './components/Alert'
+import Navigator from './config/routes';
+import { AlertProvider } from './components/Alert';
+import store from './config/store';
 
 EStyleSheet.build({
   $primaryGreen: '#2ecc71',
@@ -16,4 +18,10 @@ EStyleSheet.build({
   $primaryPurple: '#9E768F',
 });
 
-export default () => <AlertProvider><Navigator /></AlertProvider>;
+export default () => (
+  <AlertProvider>
+    <Provider store={store}>
+      <Navigator onNavigationStateChange={null} />
+    </Provider>
+  </AlertProvider>
+);
