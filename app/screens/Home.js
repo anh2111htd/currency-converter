@@ -10,7 +10,7 @@ import { ClearButton } from '../components/Button';
 // import { LastConverted } from '../components/TextLine';
 import { Header } from '../components/Header';
 
-import { changeCurrencyAmount, swapCurrency } from '../actions/currencies';
+import { changeCurrencyAmount, swapCurrency, getInitialConversion } from '../actions/currencies';
 
 class Home extends Component {
   static propTypes = {
@@ -23,6 +23,10 @@ class Home extends Component {
     lastConvertedDate: PropTypes.object,
     isFetching: PropTypes.bool,
   };
+
+  componentWillMount() {
+    this.props.dispatch(getInitialConversion());
+  }
 
   handleChangeText = (text) => {
     console.log(changeCurrencyAmount(text))
